@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if (isset($_SESSION['hid'])) {
   header("location:bloodrequest.php");
@@ -36,7 +36,7 @@ if (isset($_SESSION['hid'])) {
         <form action="file/hospitalReg.php" method="post" enctype="multipart/form-data">
           <input type="text" name="hname" placeholder="Hastane Adı" class="form-control mb-3" required>
           <input type="text" name="hcity" placeholder="Hastanenin Bulunduğu Şehir" class="form-control mb-3" required>
-          <input type="tel" name="hphone" placeholder="Hastane Telefon Numarası" class="form-control mb-3" required pattern="[0,6-9]{1}[0-9]{9,11}" title="Password must have start from 0,6,7,8 or 9 and must have 10 to 12 digit">
+          <input type="tel" name="hphone" placeholder="Hastane Telefon Numarası" class="form-control mb-3" required pattern="[0,6-9]{1}[0-9]{9,11}">
           <input type="email" name="hemail" placeholder="Hastane Email Adresi" class="form-control mb-3" required>
           <input type="password" name="hpassword" placeholder="Hastane Şifresi" class="form-control mb-3" required minlength="6">
           <input type="submit" name="hregister" value="KAYIT OL" class=" register-btn btn  btn-block mb-4">
@@ -61,7 +61,7 @@ if (isset($_SESSION['hid'])) {
                 <option value="O-">O-</option>
           </select>
           <input type="text" name="rcity" placeholder="Yaşadığınız Şehir" class="form-control mb-3" required>
-          <input type="tel" name="rphone" placeholder="Telefon Numarası" class="form-control mb-3" required pattern="[0,6-9]{1}[0-9]{9,11}" title="Password must have start from 0,6,7,8 or 9 and must have 10 to 12 digit">
+          <input type="tel" name="rphone" placeholder="Telefon Numarası" class="form-control mb-3" required pattern="[0,6-9]{1}[0-9]{9,11}">
           <input type="email" name="remail" placeholder="Email Adresi" class="form-control mb-3" required>
           <input type="password" name="rpassword" placeholder="Şifre" class="form-control mb-3" required minlength="6">
           <input type="submit" name="rregister" value="KAYIT OL" class=" register-btn btn  btn-block mb-4">
